@@ -1,0 +1,114 @@
+/* =============================================================
+   BASE.CSS — Shared tokens, reset, and typography
+   ============================================================= */
+
+:root {
+    /* Brand */
+    --dark-red:        #8b1a1a;
+    --dark-red-hover:  #6b1010;
+
+    /* Surfaces */
+    --bg-page:    #f5f5f5;
+    --bg-card:    #ffffff;
+    --bg-sidebar: #ffffff;
+
+    /* Text */
+    --text-primary:   #111827;
+    --text-secondary: #374151;
+    --text-muted:     #6b7280;
+    --text-faint:     #9ca3af;
+
+    /* Borders */
+    --border:       #e5e7eb;
+    --border-strong:#d1d5db;
+
+    /* App Layout */
+    --header-height:      72px;
+    --sidebar-width:      clamp(200px, 25vw, 280px);
+    --sidebar-collapsed:  64px;
+
+    /* Nav Container */
+    --nav-bg:          #ffffff;
+    --nav-text:        #374151;
+    --nav-hover-bg:    rgba(139, 26, 26, 0.06);
+    --nav-hover-color: var(--dark-red);
+    --nav-active-bg:   var(--dark-red);
+    --nav-active-text: #ffffff;
+
+    /* Radius */
+    --radius-sm:  6px;
+    --radius-md:  10px;
+    --radius-lg:  16px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm:    0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md:    0 4px 12px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-lg:    0 8px 24px rgba(0,0,0,0.11), 0 3px 8px rgba(0,0,0,0.06);
+    --shadow-right: 6px 0 20px rgba(0,0,0,0.07);
+
+    /* Motion */
+    --duration: 0.25s;
+    --ease:     cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Dark Mode ───────────────────────────────────────────────── */
+.dark-mode {
+    --bg-page:    #0d0d14;
+    --bg-card:    #1a1a2a;
+    --bg-sidebar: #13131f;
+
+    --text-primary:   #e5e7ef;
+    --text-secondary: #9ca3b0;
+    --text-muted:     #6b7280;
+    --text-faint:     #4b4f5e;
+
+    --border:        #252535;
+    --border-strong: #2e2e44;
+
+    --nav-bg:          #13131f;
+    --nav-text:        #9ca3b0;
+    --nav-hover-bg:    rgba(255,255,255,0.06);
+    --nav-hover-color: #ffffff;
+    --nav-active-bg:   var(--dark-red);
+    --nav-active-text: #ffffff;
+
+    --shadow-sm:    0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.25);
+    --shadow-md:    0 4px 12px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3);
+    --shadow-lg:    0 8px 24px rgba(0,0,0,0.6), 0 3px 8px rgba(0,0,0,0.4);
+    --shadow-right: 4px 0 20px rgba(0,0,0,0.4);
+}
+
+/* --- Reset -------------------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-page);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+a            { text-decoration: none; color: inherit; }
+button       { font-family: inherit; cursor: pointer; }
+img, svg     { display: block; }
+ul, ol       { list-style: none; }
+input, select, textarea { font-family: inherit; }
+
+/* --- Utility ------------------------------------------------ */
+.sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

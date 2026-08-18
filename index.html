@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaptLearn — Multiverse Portal Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <!-- Login View -->
+    <div id="login-view" class="view active">
+        <!-- LEFT SIDE -->
+        <div class="login-left">
+            <div class="brand-container">
+                <div class="logo-placeholder"></div>
+                <h1 class="brand-name"><span class="text-black">Adapt</span><span class="text-red">Learn</span></h1>
+            </div>
+            
+            <div class="portal-badge-top">* PORTAL GATEWAY EARTH-1610 *</div>
+            
+            <div class="visual-center">
+                <div class="circle-visual"></div>
+            </div>
+
+            <div class="hero-motto">UNLEASH YOUR ADAPTIVE LEARNING SUPERPOWER</div>
+
+            <div class="spiderman-container">
+                <img src="spiderman.png" alt="Spider-Man" class="spiderman-img">
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="login-right">
+            <div class="login-container neo-card">
+                <div class="auth-header">
+                    <div class="auth-ycard">AUTHENTICATION PORTAL</div>
+                    <h2 class="auth-title">MULTIVERSE PORTAL</h2>
+                    <p class="auth-desc">ENTER YOUR CREDENTIALS TO ACCESS YOUR HQ</p>
+                </div>
+                
+                <form id="login-form">
+                    <div class="input-group">
+                        <label for="login-id">MULTIVERSE EMAIL OR USERNAME</label>
+                        <input type="text" id="login-id" required value="balaji.damkondwar25@pccoepune.org" placeholder="Enter your multiverse email">
+                    </div>
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="password">ACCESS CODE</label>
+                            <a href="#" class="forgot-link">FORGOT CODE?</a>
+                        </div>
+                        <input type="password" id="password" required value="••••••" placeholder="Enter your access code">
+                    </div>
+                    <button type="submit" class="btn-red-hero sign-in-btn">⚡ SIGN IN TO HQ</button>
+                </form>
+
+                <div class="divider-text">OR CONNECT VIA</div>
+
+                <div class="social-login">
+                    <button type="button" class="btn-social">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 15.907 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+                        </svg>
+                        GOOGLE
+                    </button>
+                    <button type="button" class="btn-social">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        GITHUB
+                    </button>
+                </div>
+
+                <div class="auth-footer-link">
+                    NEW HERO? <a href="#" class="join-link">JOIN THE LEAGUE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
